@@ -1,5 +1,6 @@
 package agh.ii.prinjava.lab01.lst01_09;
 
+
 import java.util.Objects;
 
 /**
@@ -49,5 +50,26 @@ final public class HelloImmutable { // <- this "final" makes the class closed fo
 
     public static void sm1() {
         System.out.println("HelloImmutable.sm1()");
+    }
+
+
+    /**
+     * An immutable class/object demo
+     */
+    private static void demo1() {
+        // hi is immutable/read-only
+        HelloImmutable hi = new HelloImmutable(1, "abc");
+        System.out.println("hi = " + hi); // toString called implicitly
+        HelloImmutable.sm1();
+
+        System.out.println("hi.i1 = " + hi.getI1() + ", hi.s1 = " + hi.getS1());
+
+        // Test Immutable Object Creation
+        assert hi.getI1() == 1;
+        assert hi.getS1().equals("abc");
+
+        // Test Immutable Object Equality
+        HelloImmutable hi2 = new HelloImmutable(1, "abc");
+        assert hi.equals(hi2);
     }
 }
