@@ -28,4 +28,25 @@ public class Main {
             System.out.println("Two instances of a sLazySingleton?");
         }
     }
+    public static void testEagerSingleton() {
+        EagerSingleton instance1 = EagerSingleton.getInstance();
+        EagerSingleton instance2 = EagerSingleton.getInstance();
+
+        if (instance1 == instance2) {
+            System.out.println("EagerSingleton test passed: instances are the same");
+        } else {
+            System.out.println("EagerSingleton test failed: instances are not the same");
+        }
+    }
+
+    public static void testLazySingleton() {
+        LazySingleton instance1 = LazySingleton.getInstance();
+        LazySingleton instance2 = LazySingleton.getInstance();
+
+        if (instance1 == instance2) {
+            System.out.println("LazySingleton test passed: instances are the same");
+        } else {
+            System.out.println("LazySingleton test failed: instances are not the same");
+        }
+    }
 }
