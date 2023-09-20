@@ -1,6 +1,4 @@
 package agh.ii.prinjava.lab01.lst01_09;
-
-
 /**
  * A Java Record is a special kind of Java class which has a concise syntax for defining immutable
  * data-only classes. HelloJavaRecord corresponds to {@link HelloImmutable}
@@ -24,7 +22,7 @@ public record HelloJavaRecord(int i1, String s1) {
         System.out.println("HelloImmutable.sm1()");
     }
 
-    private static void demo2() {
+    public static void demo2() {
         HelloJavaRecord hjr = new HelloJavaRecord(1, "abc");
         System.out.println("hjr = " + hjr); // toString called implicitly
         HelloJavaRecord.sm1();

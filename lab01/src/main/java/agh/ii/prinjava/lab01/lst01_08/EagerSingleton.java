@@ -16,4 +16,6 @@ public class EagerSingleton {
     public static EagerSingleton getInstance() {
         return INSTANCE;
     }
+
+
 }

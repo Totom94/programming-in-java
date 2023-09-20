@@ -1,6 +1,4 @@
 package agh.ii.prinjava.lab01.lst01_09;
-
-
 import java.util.Objects;
 
 /**
@@ -56,7 +54,7 @@ final public class HelloImmutable { // <- this "final" makes the class closed fo
     /**
      * An immutable class/object demo
      */
-    private static void demo1() {
+    public static void demo1() {
         // hi is immutable/read-only
         HelloImmutable hi = new HelloImmutable(1, "abc");
         System.out.println("hi = " + hi); // toString called implicitly

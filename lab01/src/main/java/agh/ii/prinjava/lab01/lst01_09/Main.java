@@ -1,5 +1,4 @@
 package agh.ii.prinjava.lab01.lst01_09;
-
 /**
  * Consider: immutable objects vs. immutable classes
  *
