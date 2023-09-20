@@ -27,7 +27,6 @@ public record HelloJavaRecord(int i1, String s1) {
         System.out.println("hjr = " + hjr); // toString called implicitly
         HelloJavaRecord.sm1();
 
-        // Note the naming convention used by the code generator (no "get" prefix!)
         System.out.println("hjr.i1 = " + hjr.i1() + ", hi.s1 = " + hjr.s1());
 
         // Test Java Record Creation
