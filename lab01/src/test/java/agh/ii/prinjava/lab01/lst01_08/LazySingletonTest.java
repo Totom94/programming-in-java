@@ -1,4 +1,4 @@
-package agh.ii.prinjava.lab01.lst01_09;
+package agh.ii.prinjava.lab01.lst01_08;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class HelloJavaRecordTest {
+class LazySingletonTest {
 
     @BeforeEach
     void setUp() {
@@ -17,10 +17,6 @@ class HelloJavaRecordTest {
     }
 
     @Test
-    void demo2() {
-    }
-
-    @Test
-    void testDemo2() {
+    void getInstance() {
     }
 }

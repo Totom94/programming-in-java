@@ -17,10 +17,6 @@ class MainTest {
     }
 
     @Test
-    void testEagerSingleton() {
-    }
-
-    @Test
-    void testLazySingleton() {
+    void testEagerSingleton1() {
     }
 }

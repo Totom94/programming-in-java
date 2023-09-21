@@ -19,4 +19,8 @@ class HelloImmutableTest {
     @Test
     void demo1() {
     }
+
+    @Test
+    void testDemo1() {
+    }
 }
