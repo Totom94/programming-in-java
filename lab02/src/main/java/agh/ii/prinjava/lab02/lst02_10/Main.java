@@ -1,34 +1,5 @@
 package agh.ii.prinjava.lab02.lst02_10;
 
-/**
- * A functional interface (aka. <i>Single Abstract Method</i> interface) is an interface
- * that has exactly ONE abstract method (aside from the methods of Object),
- * and thus represents a single function contract.
- */
-@FunctionalInterface
-interface I1 {
-    void m1(); // exactly one abstract method => this is an abstract interface
-}
-
-@FunctionalInterface
-interface I2 {
-    void m1(); // exactly one abstract method => this is an abstract interface
-
-    default void m2() {
-        System.out.println("I2.m2()");
-    } // this is not abstract
-}
-
-/**
- * A functional interface can be implemented by named (non-anonymous) classes
- */
-class C2 implements I2 {
-    @Override
-    public void m1() {
-        System.out.println("C2.m1()");
-    }
-}
-
 // Not a functional interface (no abstract method)}
 //@FunctionalInterface interface I01 {}
 
@@ -38,11 +9,6 @@ class C2 implements I2 {
 //    void m1();
 //    void m2();
 //}
-
-@FunctionalInterface
-interface Instrument {
-    void play();
-}
 
 public class Main {
 

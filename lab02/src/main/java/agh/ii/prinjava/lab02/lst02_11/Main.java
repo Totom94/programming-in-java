@@ -1,80 +1,43 @@
 package agh.ii.prinjava.lab02.lst02_11;
 
-/**
- * <ul>
- *     <li>In functional languages, a lambda expression is a convenient way to create an anonymous
- *         (i.e. not named) function</li>
- *     <li>Since in Java we have only methods (i.e., member functions of interfaces or classes),
- *         a lambda expression is just a convenient way (syntactic sugar) to create
- *         an instance of an anonymous class that implements a functional interface</li>
- * </ul>
- *
- * @since Java 8
- */
-@FunctionalInterface
-interface I1 {
-    void apply();
-}
-
-/**
- * function: (int) -> void
- */
-@FunctionalInterface
-interface I2 {
-    void apply(int x);
-}
-
-/**
- * function: (int) -> int
- */
-@FunctionalInterface
-interface I3 {
-    int apply(int x);
-}
-
-/**
- * function: (int, int) -> void
- */
-@FunctionalInterface
-interface I4 {
-    void apply(int x, int y);
-}
-
-/**
- * function: (int, int) -> int
- */
-@FunctionalInterface
-interface I5 {
-    int apply(int x, int y);
-}
-
 public class Main {
     private static void demo1() {
         System.out.println("demo1...");
-        I1 i11 = new I1() { // (1)
+        // Using anonymous class
+        I1 i11 = new I1() {   //(1)
             @Override
-            public void apply() {
-                System.out.println("i11.m1()");
+            public int apply() {
+                // Implementation logic here (void --> int)
+                return 40;       // example of value
             }
         };
         i11.apply();
 
         // The above can be abbreviated to
-        I1 i12 = () -> System.out.println("i12.m1()"); // lambda expression corresponding to (1)
+        I1 i12 = () -> {
+            return 40;
+        }; // lambda expression corresponding to (1) , int
         i12.apply();
+
+        int res1 = i11.apply();
+        int res2 = i12.apply();
+        System.out.println("Anonymous: "+ res1);
+        System.out.println("Lambda: "+ res2);
     }
 
     private static void demo2() {
         System.out.println("demo2...");
+        // Using anonymous class
         I2 i21 = new I2() {
             @Override
-            public void apply(int x) {
-                System.out.println("i21.m1()");
+            public void apply(int value) {
+
+                System.out.println("i21.m1()");   // void
             }
         };
         i21.apply(1);
 
-        // The above can be abbreviated to one of these (they are equivalent)
+        // The above can be abbreviated to one of these (they are equivalent) ; lambda expressions
         I2 i22 = x -> System.out.println("i22.m1()");
         i22.apply(1);
 
@@ -96,14 +59,25 @@ public class Main {
      */
     private static void demo3() {
         System.out.println("demo3...");
+        // Anonymous class
         I3 i31 = new I3() {
             @Override
             public int apply(int x) {
-                return 2 * x;
+
+                return 4 * x;
             }
         };
-        System.out.println("i31.m3(5) = " + i31.apply(5));
 
+        I3 lambdaexp = (value) -> {
+            return value * 2;
+        };
+
+        int res1 = i31.apply(5);
+        int res2 = lambdaexp.apply(10);
+        System.out.println("Anonymous: "+ res1);
+        System.out.println("Lambda: "+ res2);
+
+        /*
         I3[] i3s = {
                 (int x) -> 2 * x, // <- This is most common
                 (int x) -> {
@@ -114,18 +88,27 @@ public class Main {
         for (var i3 : i3s) {
             System.out.println("i31.m3(5) = " + i3.apply(5));
         }
+        */
     }
 
     private static void demo4() {
         System.out.println("demo4...");
+        // Anonymous class
         I4 i41 = new I4() {
             @Override
             public void apply(int x, int y) {
-                System.out.println("i41.m4(), x = " + x + ", y = y");
+                System.out.println("i41.m4(), x = " + x + ", y = y");   // void result
             }
         };
-        i41.apply(5, 10);
 
+        I4 lambdaexp = (value1, value2) -> {
+            System.out.println("Values: " + value1 + ", " + value2);   // void result
+        };
+
+        i41.apply(5,10);
+        lambdaexp.apply(5,10);
+
+        /*
         new I4() {
             @Override
             public void apply(int x, int y) {
@@ -143,6 +126,7 @@ public class Main {
         for (var i4 : i4s) {
             i4.apply(10, 20);
         }
+         */
     }
 
     /**
@@ -191,3 +175,5 @@ public class Main {
         demo5();
     }
 }
+
+

@@ -24,4 +24,28 @@ class ArrayBasedImplTest {
     void newStackIsEmpty() {
         assertTrue(stackOfInts.isEmpty());
     }
+
+    @Test
+    void isEmpty() {
+    }
+
+    @Test
+    void pop() {
+    }
+
+    @Test
+    void push() {
+    }
+
+    @Test
+    void testIsEmpty() {
+    }
+
+    @Test
+    void numOfElems() {
+    }
+
+    @Test
+    void peek() {
+    }
 }
