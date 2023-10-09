@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="agh.ii.prinjava.lab02.exc02_01.impl.ArrayBasedImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-30T12:05:20" hostname="TOMTOM" time="0.028">
+<testsuite name="agh.ii.prinjava.lab02.exc02_01.impl.ArrayBasedImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-05T09:57:14" hostname="TOMTOM" time="0.036">
   <properties/>
-  <testcase name="newStackIsEmpty()" classname="agh.ii.prinjava.lab02.exc02_01.impl.ArrayBasedImplTest" time="0.028"/>
+  <testcase name="newStackIsEmpty()" classname="agh.ii.prinjava.lab02.exc02_01.impl.ArrayBasedImplTest" time="0.036"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
