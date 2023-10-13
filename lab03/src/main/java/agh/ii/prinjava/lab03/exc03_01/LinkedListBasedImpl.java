@@ -53,7 +53,6 @@ public class LinkedListBasedImpl implements QueueOfInts {
         if (isEmpty()) {
             tail = null;
         }
-
         return value;
     }
 
