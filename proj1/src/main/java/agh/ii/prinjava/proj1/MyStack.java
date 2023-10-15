@@ -4,6 +4,7 @@ import agh.ii.prinjava.proj1.impl.MyStackDLLBImpl;
 
 /** Interface for creating a stack */
 public interface MyStack<E> {
+
     /** Remove the item at the top of the stack and turn it over */
     E pop();
 

@@ -7,6 +7,7 @@ package agh.ii.prinjava.proj1.impl;
 public class DLinkList<E> {
     private Node<E> head; // First node of the list
     private Node<E> tail; // Last node of the list
+
     /**
      * Node class for doubly linked list.
      * It contains an element and pointers to previous and next nodes.
@@ -15,6 +16,7 @@ public class DLinkList<E> {
         T elem;
         Node<T> next;
         Node<T> prev;
+
         /** Declaration of each node element: constructor*/
         Node(T elem, Node<T> prev, Node<T> next) {
             this.elem = elem;
@@ -22,6 +24,7 @@ public class DLinkList<E> {
             this.next = next;
         }
     }
+
     /**
      * Adds an element at the beginning of the list.
      *
@@ -85,6 +88,7 @@ public class DLinkList<E> {
         }
         return removedElem;
     }
+
     /**Returns a string representation of the doubly-linked list.*/
     @Override
     public String toString() {

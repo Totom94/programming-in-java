@@ -19,6 +19,7 @@ class MyStackDLLBImplTest {
     void tearDown() {
         stackOfInts = null;
     }
+
 /**Tests pushing elements to the stack and verifying the top using peek().*/
     @Test
     void testPush() {
@@ -27,6 +28,7 @@ class MyStackDLLBImplTest {
         stackOfInts.push(2);
         assertEquals(2, stackOfInts.peek());
     }
+
 /** Tests popping elements from the stack and verifying the popped values*/
     @Test
     void testPop() {
@@ -35,6 +37,7 @@ class MyStackDLLBImplTest {
         stackOfInts.push(2);
         assertEquals(2, stackOfInts.peek());
     }
+
     /**Tests the count of elements in the stack after pushing elements.*/
     @Test
     void testNumOfElems() {

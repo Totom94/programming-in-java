@@ -47,12 +47,12 @@ public class MyStackDLLBImpl<E> implements MyStack<E> {
                 break;
             }
         }
-
         for (E e : temp) {
             elems.addFirst(e);
         }
         return count;
     }
+
     /**
      * {@inheritDoc}
      */

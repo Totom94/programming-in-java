@@ -13,6 +13,7 @@ class DLinkListTest {
     void setUp() {
         dLinkList = new DLinkList<>();
     }
+
     /**
      * This method cleans up the DLinkList after each test.
      */
@@ -20,6 +21,7 @@ class DLinkListTest {
     void tearDown() {
         dLinkList = null;
     }
+
     /**
      * Test to check the addFirst method.
      * The test checks if an element is correctly added at the beginning.
@@ -31,6 +33,7 @@ class DLinkListTest {
         dLinkList.addFirst(2);
         assertEquals("[2, 1]", dLinkList.toString());
     }
+
     /**
      * Test to check the addLast method.
      * The test checks if an element is correctly added at the end.
@@ -42,6 +45,7 @@ class DLinkListTest {
         dLinkList.addLast(2);
         assertEquals("[1, 2]", dLinkList.toString());
     }
+
     /**
      * Test to check the removeFirst method.
      * The test checks if the first element is correctly removed and the appropriate value is returned.
@@ -53,6 +57,7 @@ class DLinkListTest {
         assertEquals(2, dLinkList.removeFirst());
         assertEquals("[1]", dLinkList.toString());
     }
+
     /**
      * Test to check the removeLast method.
      * The test checks if the last element is correctly removed and the appropriate value is returned.
@@ -64,6 +69,7 @@ class DLinkListTest {
         assertEquals(2, dLinkList.removeLast());
         assertEquals("[1]", dLinkList.toString());
     }
+
     /**
      * Test to check the toString method. The test checks whether the string representation is correctly generated
      */
