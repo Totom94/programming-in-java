@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="agh.ii.prinjava.lab04.exc04_02.impl.DLinkListTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-10-19T17:57:50" hostname="TOMTOM" time="0.052">
+  <properties/>
+  <testcase name="testPeekFirst()" classname="agh.ii.prinjava.lab04.exc04_02.impl.DLinkListTest" time="0.04"/>
+  <testcase name="testSize()" classname="agh.ii.prinjava.lab04.exc04_02.impl.DLinkListTest" time="0.002"/>
+  <testcase name="testAddToEnd()" classname="agh.ii.prinjava.lab04.exc04_02.impl.DLinkListTest" time="0.002"/>
+  <testcase name="testRemoveFromStart()" classname="agh.ii.prinjava.lab04.exc04_02.impl.DLinkListTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
