@@ -3,25 +3,45 @@ package agh.ii.prinjava.lab04.exc04_02.impl;
 import agh.ii.prinjava.lab04.exc04_02.MyStack;
 
 public class MyStackDLLBImpl<E> implements MyStack<E> {
-    private DLinkList<E> elems;
+    private final DLinkList<E> elems = new DLinkList<>();
 
+    /**
+     * Remove the item at the top of the stack and return it.
+     * @throws IllegalStateException if the stack is empty
+     */
     @Override
     public E pop() {
-        throw new IllegalStateException("To be implemented");
+        if (elems.size() == 0) {
+            throw new IllegalStateException("Stack is empty");
+        }
+        return elems.removeFromStart();
     }
 
+    /**
+     * Push an element of type E to the top of the stack.
+     */
     @Override
     public void push(E x) {
-        throw new IllegalStateException("To be implemented");
+        elems.addFirst(x);
     }
 
+    /**
+     * Return the number of elements in the stack.
+     */
     @Override
     public int numOfElems() {
-        throw new IllegalStateException("To be implemented");
+        return elems.size();
     }
 
+    /**
+     * Return the top element of the stack without removing it.
+     * @throws IllegalStateException if the stack is empty
+     */
     @Override
     public E peek() {
-        throw new IllegalStateException("To be implemented");
+        if (elems.size() == 0) {
+            throw new IllegalStateException("Stack is empty");
+        }
+        return elems.peekFirst();
     }
 }

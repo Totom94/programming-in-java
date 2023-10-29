@@ -1,26 +1,40 @@
 package agh.ii.prinjava.lab04.exc04_02.impl;
 
-import agh.ii.prinjava.lab04.exc04_02.MyQueue;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
+import java.util.NoSuchElementException;
 import static org.junit.jupiter.api.Assertions.*;
 
-class MyQueueDLLBImplTest {
+public class MyQueueDLLBImplTest {
 
-    MyQueue<Integer> queueOfInts = MyQueue.<Integer>create();
+    @Test
+    public void testEnqueueAndDequeue() {
+        MyQueueDLLBImpl<Integer> queue = new MyQueueDLLBImpl<>();
+        queue.enqueue(1);
+        queue.enqueue(2);
 
-    @BeforeEach
-    void setUp() {
-    }
+        assertEquals(2, queue.numOfElems());
 
-    @AfterEach
-    void tearDown() {
+        int dequeued = queue.dequeue();
+        assertEquals(1, dequeued);
+        assertEquals(1, queue.numOfElems());
     }
 
     @Test
-    void newQueueIsEmpty() {
-        assertTrue(true);
+    public void testNumOfElems() {
+        MyQueueDLLBImpl<String> queue = new MyQueueDLLBImpl<>();
+        assertEquals(0, queue.numOfElems());
+
+        queue.enqueue("A");
+        queue.enqueue("B");
+        assertEquals(2, queue.numOfElems());
+    }
+
+    @Test
+    public void testPeek() {
+        MyQueueDLLBImpl<String> queue = new MyQueueDLLBImpl<>();
+        assertThrows(NoSuchElementException.class, queue::peek);
+
+        queue.enqueue("Hey");
+        assertEquals("Hey", queue.peek());
     }
 }

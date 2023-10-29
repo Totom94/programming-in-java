@@ -36,22 +36,29 @@ public class MyStackDLLBImpl<E> implements MyStack<E> {
      */
     @Override
     public int numOfElems() {
-        int count = 0;
-        List<E> temp = new ArrayList<>();
+        int count = 0;  // Variable pour compter le nombre d'éléments
+        List<E> temp = new ArrayList<>();  // Une liste temporaire pour stocker les éléments
+
         while (true) {
             try {
-                E elem = elems.removeFirst();
-                temp.add(elem);
-                count++;
+                // Essayer de retirer un élément de la pile
+                E elem = elems.removeFirst();  // Retire le premier élément de la pile
+                temp.add(elem);  // Ajoute l'élément à la liste temporaire
+                count++;  // Incrémente le compteur d'éléments
             } catch (Exception e) {
+                // Si une exception est déclenchée (pile vide), sortir de la boucle
                 break;
             }
         }
+
+        // Réinsère les éléments depuis la liste temporaire dans la pile
         for (E e : temp) {
-            elems.addFirst(e);
+            elems.addFirst(e);  // Réinsère chaque élément au début de la pile
         }
-        return count;
+
+        return count;  // Retourne le nombre total d'éléments dans la pile
     }
+
 
     /**
      * {@inheritDoc}
@@ -61,8 +68,8 @@ public class MyStackDLLBImpl<E> implements MyStack<E> {
         if (isEmpty()) {
             throw new IllegalStateException("Stack is empty");
         }
-        E elem = elems.removeFirst();
-        elems.addFirst(elem);
+        E elem = elems.removeLast();
+        elems.addLast(elem);
         return elem;
     }
 }
