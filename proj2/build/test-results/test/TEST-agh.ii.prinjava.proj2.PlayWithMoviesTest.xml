@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="agh.ii.prinjava.proj2.PlayWithMoviesTest" tests="10" skipped="0" failures="10" errors="0" timestamp="2023-11-13T11:57:21" hostname="TOMTOM" time="0.03">
+<testsuite name="agh.ii.prinjava.proj2.PlayWithMoviesTest" tests="10" skipped="0" failures="10" errors="0" timestamp="2023-11-13T13:04:06" hostname="TOMTOM" time="0.065">
   <properties/>
-  <testcase name="testEx01()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.017">
+  <testcase name="testEx01()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.033">
     <failure message="java.lang.RuntimeException: ex01 is not implemented!" type="java.lang.RuntimeException">java.lang.RuntimeException: ex01 is not implemented!
 	at agh.ii.prinjava.proj2.PlayWithMovies.ex01(PlayWithMovies.java:12)
 	at agh.ii.prinjava.proj2.PlayWithMoviesTest.testEx01(PlayWithMoviesTest.java:17)
@@ -92,7 +92,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testEx02()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.001">
+  <testcase name="testEx02()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.002">
     <failure message="java.lang.RuntimeException: ex02 is not implemented!" type="java.lang.RuntimeException">java.lang.RuntimeException: ex02 is not implemented!
 	at agh.ii.prinjava.proj2.PlayWithMovies.ex02(PlayWithMovies.java:19)
 	at agh.ii.prinjava.proj2.PlayWithMoviesTest.testEx02(PlayWithMoviesTest.java:34)
@@ -183,7 +183,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testEx03()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.001">
+  <testcase name="testEx03()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.003">
     <failure message="java.lang.RuntimeException: ex03 is not implemented!" type="java.lang.RuntimeException">java.lang.RuntimeException: ex03 is not implemented!
 	at agh.ii.prinjava.proj2.PlayWithMovies.ex03(PlayWithMovies.java:26)
 	at agh.ii.prinjava.proj2.PlayWithMoviesTest.testEx03(PlayWithMoviesTest.java:52)
@@ -274,7 +274,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testEx04()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.0">
+  <testcase name="testEx04()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.002">
     <failure message="java.lang.RuntimeException: ex04 is not implemented!" type="java.lang.RuntimeException">java.lang.RuntimeException: ex04 is not implemented!
 	at agh.ii.prinjava.proj2.PlayWithMovies.ex04(PlayWithMovies.java:33)
 	at agh.ii.prinjava.proj2.PlayWithMoviesTest.testEx04(PlayWithMoviesTest.java:69)
@@ -365,7 +365,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testEx05()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.001">
+  <testcase name="testEx05()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.002">
     <failure message="java.lang.RuntimeException: ex05 is not implemented!" type="java.lang.RuntimeException">java.lang.RuntimeException: ex05 is not implemented!
 	at agh.ii.prinjava.proj2.PlayWithMovies.ex05(PlayWithMovies.java:40)
 	at agh.ii.prinjava.proj2.PlayWithMoviesTest.testEx05(PlayWithMoviesTest.java:88)
@@ -547,7 +547,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testEx07()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.0">
+  <testcase name="testEx07()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.001">
     <failure message="java.lang.RuntimeException: ex07 is not implemented!" type="java.lang.RuntimeException">java.lang.RuntimeException: ex07 is not implemented!
 	at agh.ii.prinjava.proj2.PlayWithMovies.ex07(PlayWithMovies.java:54)
 	at agh.ii.prinjava.proj2.PlayWithMoviesTest.testEx07(PlayWithMoviesTest.java:128)
@@ -638,7 +638,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testEx08()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.0">
+  <testcase name="testEx08()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.001">
     <failure message="java.lang.RuntimeException: ex08 is not implemented!" type="java.lang.RuntimeException">java.lang.RuntimeException: ex08 is not implemented!
 	at agh.ii.prinjava.proj2.PlayWithMovies.ex08(PlayWithMovies.java:61)
 	at agh.ii.prinjava.proj2.PlayWithMoviesTest.testEx08(PlayWithMoviesTest.java:147)
@@ -729,7 +729,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testEx09()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.0">
+  <testcase name="testEx09()" classname="agh.ii.prinjava.proj2.PlayWithMoviesTest" time="0.001">
     <failure message="java.lang.RuntimeException: ex08 is not implemented!" type="java.lang.RuntimeException">java.lang.RuntimeException: ex08 is not implemented!
 	at agh.ii.prinjava.proj2.PlayWithMovies.ex09(PlayWithMovies.java:68)
 	at agh.ii.prinjava.proj2.PlayWithMoviesTest.testEx09(PlayWithMoviesTest.java:171)
