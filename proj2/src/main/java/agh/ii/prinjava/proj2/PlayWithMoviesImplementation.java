@@ -17,7 +17,7 @@ public class PlayWithMoviesImplementation implements PlayWithMovies {
      * @param director the name of the director to filter movies by
      * @return a set of movie titles
      */
-    public static Set<String> ex01(String director) {
+     static Set<String> ex01(String director) {
         // Stream<Movie> is a sequence of elements supporting sequential and parallel aggregate operations
         // flatMap is used to convert each Movie to a Stream<Movie>, one for each director, for further processing
         // filter is used to select only the movies with the given director

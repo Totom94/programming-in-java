@@ -14,14 +14,14 @@ class PlayWithMoviesTest {
      */
     @Test
     public void testEx01() {
-        assertThat(PlayWithMovies.ex01("Guy Ritchie"))
+        assertThat(PlayWithMoviesImplementation.ex01("Guy Ritchie"))
                 .containsExactlyInAnyOrder("Snatch", "Lock, Stock and Two Smoking Barrels");
 
-        assertThat(PlayWithMovies.ex01("Christopher Nolan"))
+        assertThat(PlayWithMoviesImplementation.ex01("Christopher Nolan"))
                 .containsExactlyInAnyOrder("The Dark Knight", "Inception", "Interstellar",
                         "The Prestige", "Memento", "The Dark Knight Rises", "Batman Begins");
 
-        assertThat(PlayWithMovies.ex01("Quentin Tarantino"))
+        assertThat(PlayWithMoviesImplementation.ex01("Quentin Tarantino"))
                 .containsExactlyInAnyOrder("Pulp Fiction", "Django Unchained", "Reservoir Dogs",
                         "Inglourious Basterds", "Kill Bill: Vol. 1", "Sin City");
     }
@@ -31,15 +31,15 @@ class PlayWithMoviesTest {
      */
     @Test
     public void testEx02() {
-        assertThat(PlayWithMovies.ex02("Tom Hanks"))
+        assertThat(PlayWithMoviesImplementation.ex02("Tom Hanks"))
                 .containsExactlyInAnyOrder("Forrest Gump", "Saving Private Ryan", "The Green Mile",
                         "Toy Story 3", "Toy Story", "Catch Me If You Can");
 
-        assertThat(PlayWithMovies.ex02("Tom Hardy"))
+        assertThat(PlayWithMoviesImplementation.ex02("Tom Hardy"))
                 .containsExactlyInAnyOrder("Inception", "The Dark Knight Rises",
                         "Warrior", "Mad Max: Fury Road", "The Revenant");
 
-        assertThat(PlayWithMovies.ex02("Robert De Niro"))
+        assertThat(PlayWithMoviesImplementation.ex02("Robert De Niro"))
                 .containsExactlyInAnyOrder("The Godfather: Part II", "Goodfellas", "Once Upon a Time in America",
                         "Raging Bull", "Heat", "Casino", "The Deer Hunter");
     }
@@ -49,7 +49,7 @@ class PlayWithMoviesTest {
      */
     @Test
     public void testEx03() {
-        Map<String, Long> numOfMoviesPerDirector = PlayWithMovies.ex03();
+        Map<String, Long> numOfMoviesPerDirector = PlayWithMoviesImplementation.ex03();
 
         assertThat(numOfMoviesPerDirector.size()).isEqualTo(167);
         assertThat(numOfMoviesPerDirector).containsAllEntriesOf(Map.of(
@@ -66,7 +66,7 @@ class PlayWithMoviesTest {
      */
     @Test
     public void testEx04() {
-        Map<String, Long> tenMostFreqDirectors = PlayWithMovies.ex04();
+        Map<String, Long> tenMostFreqDirectors = PlayWithMoviesImplementation.ex04();
         assertThat(tenMostFreqDirectors).containsAllEntriesOf(Map.of(
                 "Alfred Hitchcock", 9L,
                 "Stanley Kubrick", 8L,
@@ -85,7 +85,7 @@ class PlayWithMoviesTest {
      */
     @Test
     public void testEx05() {
-        Map<String, Set<String>> moviesPerDirector = PlayWithMovies.ex05();
+        Map<String, Set<String>> moviesPerDirector = PlayWithMoviesImplementation.ex05();
 
         assertThat(moviesPerDirector.keySet()).containsExactlyInAnyOrder(
                 "Alfred Hitchcock", "Stanley Kubrick", "Martin Scorsese", "Steven Spielberg",
@@ -112,7 +112,7 @@ class PlayWithMoviesTest {
      */
     @Test
     public void testEx06() {
-        Map<String, Long> numOfMoviesPerActor = PlayWithMovies.ex06();
+        Map<String, Long> numOfMoviesPerActor = PlayWithMoviesImplementation.ex06();
 
         assertThat(numOfMoviesPerActor.size()).isEqualTo(773);
         assertThat(numOfMoviesPerActor).containsAllEntriesOf(Map.of(
@@ -125,7 +125,7 @@ class PlayWithMoviesTest {
      */
     @Test
     public void testEx07() {
-        Map<String, Long> nineMostFreqActors = PlayWithMovies.ex07();
+        Map<String, Long> nineMostFreqActors = PlayWithMoviesImplementation.ex07();
 
         assertThat(nineMostFreqActors).containsAllEntriesOf(Map.of(
                 "Leonardo DiCaprio", 8L,
@@ -144,7 +144,7 @@ class PlayWithMoviesTest {
      */
     @Test
     public void testEx08() {
-        Map<String, Set<String>> moviesPerActor = PlayWithMovies.ex08();
+        Map<String, Set<String>> moviesPerActor = PlayWithMoviesImplementation.ex08();
 
         assertThat(moviesPerActor.keySet()).containsExactlyInAnyOrder(
                 "Leonardo DiCaprio", "Harrison Ford", "James Stewart", "Robert De Niro",
@@ -168,7 +168,7 @@ class PlayWithMoviesTest {
      */
     @Test
     public void testEx09() {
-        Map<String, Long> fiveMostFreqActorDuos = PlayWithMovies.ex09();
+        Map<String, Long> fiveMostFreqActorDuos = PlayWithMoviesImplementation.ex09();
 
         assertThat(fiveMostFreqActorDuos).containsAllEntriesOf(Map.of(
                 "Carrie Fisher, Mark Hamill", 4L,
@@ -183,7 +183,7 @@ class PlayWithMoviesTest {
      */
     @Test
     public void testEx10() {
-        Map<String, Set<String>> moviesPerActorDuo = PlayWithMovies.ex10();
+        Map<String, Set<String>> moviesPerActorDuo = PlayWithMoviesImplementation.ex10();
 
         assertThat(moviesPerActorDuo.keySet()).containsExactlyInAnyOrder(
                 "Carrie Fisher, Mark Hamill",
