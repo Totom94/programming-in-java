@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public record Movie(int rank, double rating, String title, int year, String rated, int runtime,
-                    List<String> genre, List<String> directors,
-                    List<String> actors, String production) {
+public record Movie(int rank, double rating, String title, int year, String rated, int runtime, List<String> genre, List<String> directors, List<String> actors, String production) {
 
     /**
      * Factory method
