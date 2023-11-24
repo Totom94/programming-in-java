@@ -66,6 +66,7 @@ public interface Utils {
         return pairs;
     }
 
+    // retourne les autres films associés au réalisateur du film donné en paramètre
     static List<Movie> oneToManyByDirector(Movie m) {
         List<Movie> movies = new ArrayList<>(m.directors().size());
 
@@ -77,6 +78,7 @@ public interface Utils {
 
         return movies;
     }
+
 
     static List<Movie> oneToManyByActor(Movie m) {
         List<Movie> movies = new ArrayList<>(m.directors().size());
